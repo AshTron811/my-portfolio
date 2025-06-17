@@ -87,8 +87,33 @@ function Home() {
         </div>
       </section>
 
-      {/* About & Contact & Footer (unchanged) */}
-      {/* ... */}
+      {/* About Section */}
+      <section id="about" className="py-16">
+        <div className="container mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-semibold mb-6 text-center">About Me</h2>
+          <p className="max-w-3xl mx-auto text-center leading-relaxed">
+            A Tata Imagination Challenge National Semi-finalist with credible certifications like Microsoft Certified: Azure AI Fundamentals and Computer Vision with Embedded Machine Learning, Ashutosh is a highly motivated and detail-oriented individual. His educational and industry experience in Computer Applications, Data Science, AI Algorithms and Spatial Analytics showcases a unique blend of Software Development skills with extensive knowledge in the Artificial Intelligence and Geospatial domain.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6 md:px-12">
+          <h2 className="text-3xl font-semibold mb-6 text-center">Get In Touch</h2>
+          <form className="max-w-xl mx-auto grid grid-cols-1 gap-6">
+            <input type="text" name="name" placeholder="Your Name" className="p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400" />
+            <input type="email" name="email" placeholder="Your Email" className="p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400" />
+            <textarea name="message" placeholder="Message" rows="4" className="p-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400" />
+            <button type="submit" className="py-4 px-8 bg-gray-900 text-white rounded-2xl font-semibold hover:bg-gray-800 transition">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Ashutosh Sharma. All rights reserved.
+      </footer>
     </div>
   );
 }
