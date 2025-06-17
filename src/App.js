@@ -1,7 +1,13 @@
+/*
+File: src/App.js
+Description: Main application with routing to individual project pages.
+*/
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectPage from "./pages/ProjectPage";
+import SoilMoisturePage from "./pages/projects/SoilMoisturePage";
+import CustomerSegmentationPage from "./pages/projects/CustomerSegmentationPage";
+import GenAITrendsPage from "./pages/projects/GenAITrendsPage";
 
 const projects = [
   { id: "soil-moisture", title: "Real-time Soil Moisture Prediction", img: "/imgs/proj1.jpg" },
@@ -15,7 +21,7 @@ function Home() {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % projects.length);
+      setCurrent(prev => (prev + 1) % projects.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
@@ -60,22 +66,22 @@ function Home() {
         </div>
       </section>
 
-      {/* Hero */}
+      {/* Hero Section */}
       <section id="hero" className="flex flex-col items-center justify-center text-center py-32">
         <motion.h1 className="text-5xl md:text-7xl font-bold" initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           Driving Innovation Forward
         </motion.h1>
         <motion.p className="mt-6 text-lg max-w-xl" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.6 }}>
-          I'm an AI enthusiast & developer showcasing expertise in Software Development, Artificial Intelligence, and Spatial Analytics.
+          I'm an AI enthusiast & developer showcasing expertise in Software Development, AI, and Spatial Analytics.
         </motion.p>
       </section>
 
-      {/* Featured Projects */}
+      {/* Featured Projects Section */}
       <section id="projects" className="py-16 bg-gray-50">
         <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-3xl font-semibold mb-12 text-center">Featured Projects</h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((proj) => (
+            {projects.map(proj => (
               <Link key={proj.id} to={`/projects/${proj.id}`} className="block bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
                 <img src={proj.img} alt={proj.title} className="w-full h-48 object-cover" />
                 <div className="p-6">
@@ -123,7 +129,9 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects/:projectId" element={<ProjectPage projects={projects} />} />
+        <Route path="/projects/soil-moisture" element={<SoilMoisturePage />} />
+        <Route path="/projects/customer-segmentation" element={<CustomerSegmentationPage />} />
+        <Route path="/projects/genai-trends" element={<GenAITrendsPage />} />
       </Routes>
     </Router>
   );
