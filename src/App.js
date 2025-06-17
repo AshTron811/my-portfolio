@@ -66,7 +66,7 @@ function Home() {
           Driving Innovation Forward
         </motion.h1>
         <motion.p className="mt-6 text-lg max-w-xl" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 0.6 }}>
-          I'm an AI enthusiast & developer showcasing expertise in Software Development, AI, and Spatial Analytics.
+          I'm an AI enthusiast & developer showcasing expertise in Software Development, Artificial Intelligence, and Spatial Analytics.
         </motion.p>
       </section>
 
