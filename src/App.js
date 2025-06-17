@@ -58,10 +58,17 @@ function Home() {
             </motion.div>
           ))}
         </AnimatePresence>
+        {/* Slider Dots Controls */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
           {projects.map((_, idx) => (
-            <button key={idx} onClick={() => setCurrent(idx)}
-              className={`w-4 h-4 rounded-full ${idx === current ? 'bg-white' : 'bg-gray-400'} focus:outline-none`} />
+            <button
+              key={idx}
+              onClick={e => {
+                e.stopPropagation();
+                setCurrent(idx);
+              }}
+              className={`w-4 h-4 rounded-full ${idx === current ? 'bg-white' : 'bg-gray-400'} focus:outline-none`}
+            />
           ))}
         </div>
       </section>
