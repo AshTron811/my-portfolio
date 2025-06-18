@@ -10,7 +10,8 @@ export default function CustomerSegmentationPage() {
       <h1 className="text-4xl font-bold mb-4">Customer Segmentation and Prediction</h1>
       <img src="/imgs/proj2.jpg" alt="Customer Segmentation" className="w-full h-64 object-cover rounded-2xl shadow-md mb-6" />
       <p className="text-lg leading-relaxed">
-        [language: Python] This project performs customer segmentation using K-Means clustering on RFM (Recency, Frequency, Monetary) data, followed by Random Forest to analyze feature importance and build predictive models. The machine learning model demonstrates 96% accuracy in predicting customer clusters. [deployed: StreamLit (https://rfm-based-customer-segmentation-and-prediction-software.streamlit.app)].      </p>
+        [language: Python] This project performs customer segmentation using K-Means clustering on RFM (Recency, Frequency, Monetary) data, followed by Random Forest to analyze feature importance and build predictive models. The machine learning model demonstrates 96% accuracy in predicting customer clusters.
+      </p>
       <div className="mt-8 flex space-x-4">
         <a
           href="https://github.com/AshTron811/RFM-Based-Customer-Segmentation-and-Prediction-Software"
