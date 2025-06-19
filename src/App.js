@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import SoilMoisturePage from "./pages/projects/SoilMoisturePage";
 import CustomerSegmentationPage from "./pages/projects/CustomerSegmentationPage";
 import GenAITrendsPage from "./pages/projects/GenAITrendsPage";
+import { HashLink } from 'react-router-hash-link';
 
 const projects = [
   { id: "soil-moisture", title: "Real-time Soil Moisture Prediction", img: "/imgs/proj1.jpg" },
@@ -32,9 +33,9 @@ function Home() {
       <nav className="flex items-center justify-between p-6 fixed w-full bg-white z-10">
         <span className="text-xl font-semibold">Ashutosh Sharma</span>
         <ul className="hidden md:flex space-x-8 text-lg">
-          <li><a href="#projects" className="hover:text-gray-600">Projects</a></li>
-          <li><a href="#about" className="hover:text-gray-600">About</a></li>
-          <li><a href="#contact" className="hover:text-gray-600">Contact</a></li>
+          <li><HashLink smooth to="#/projects">Projects</HashLink></li>
+          <li><HashLink smooth to="#/about">About</HashLink></li>
+          <li><HashLink smooth to="#/contact">Contact</HashLink></li>
         </ul>
         <button className="md:hidden focus:outline-none">
           <svg width="24" height="24" fill="currentColor">
