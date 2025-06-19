@@ -33,9 +33,9 @@ function Home() {
       <nav className="flex items-center justify-between p-6 fixed w-full bg-white z-10">
         <span className="text-xl font-semibold">Ashutosh Sharma</span>
         <ul className="hidden md:flex space-x-8 text-lg">
-          <li><HashLink smooth to="#/projects">Projects</HashLink></li>
-          <li><HashLink smooth to="#/about">About</HashLink></li>
-          <li><HashLink smooth to="#/contact">Contact</HashLink></li>
+          <li><HashLink smooth to="/#projects">Projects</HashLink></li>
+          <li><HashLink smooth to="/#about">About</HashLink></li>
+          <li><HashLink smooth to="/#contact">Contact</HashLink></li>
         </ul>
         <button className="md:hidden focus:outline-none" onClick={() => { /* mobile nav toggle */ }}>
           <svg width="24" height="24" fill="currentColor">
