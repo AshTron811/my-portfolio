@@ -37,7 +37,7 @@ function Home() {
           <li><HashLink smooth to="#/about">About</HashLink></li>
           <li><HashLink smooth to="#/contact">Contact</HashLink></li>
         </ul>
-        <button className="md:hidden focus:outline-none">
+        <button className="md:hidden focus:outline-none" onClick={() => { /* mobile nav toggle */ }}>
           <svg width="24" height="24" fill="currentColor">
             <path d="M4 6h16M4 12h16M4 18h16" />
           </svg>
