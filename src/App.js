@@ -3,7 +3,7 @@ File: src/App.js
 Description: Main application with routing to individual project pages.
 */
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import SoilMoisturePage from "./pages/projects/SoilMoisturePage";
 import CustomerSegmentationPage from "./pages/projects/CustomerSegmentationPage";
