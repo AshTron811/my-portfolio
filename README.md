@@ -21,8 +21,6 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 [Live Preview](https://my-portfolio-9czj.onrender.com/#)
 
-![Portfolio Screenshot](./public/screenshot.png)
-
 ## Features
 
 * Responsive design for mobile, tablet, and desktop
@@ -134,4 +132,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-Feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com) with any questions or opportunities.kkue")
+Feel free to reach out to me at [ashutosh10615@gmail.com](mailto:ashutosh10615@gmail.com) with any questions or opportunities.kkue")
