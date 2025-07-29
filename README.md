@@ -19,9 +19,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## Demo
 
-<!-- If you have a live demo, uncomment the line below and replace the URL -->
-
-<!-- [Live Preview](https://your-portfolio-site.com) -->
+[Live Preview](https://my-portfolio-9czj.onrender.com/#)
 
 ![Portfolio Screenshot](./public/screenshot.png)
 
